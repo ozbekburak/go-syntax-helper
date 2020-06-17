@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// direkt int kullanabilirken, float şeklinde veri tipi kullanamıyoruz.
+// direkt "int" veri tipimiz varken, diğer dillerden alışmış olabileceğimiz "float" yok.
 // seçeneklerimiz: float32, float64
 func divide(x float32, y float32) float32 {
 	return x / y
