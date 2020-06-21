@@ -67,4 +67,24 @@ func main() {
 	fmt.Println(myArray[:3])
 	fmt.Println(myArray[:])
 
+	/*
+		slice length and capacity
+		length: slice'ın içerdiği eleman sayısı
+		capacity: slice'ın, ilk elemanından itibaren, bağlı olduğu array'in alabileceği eleman sayısıdır
+		slice'ımızın uzunluğunu (length) tekrar slicelayarak (re-slice) genişletebiliriz
+	*/
+	population := []float64{40.5, 65.7, 70.0, 75.1, 81.2}
+	fmt.Printf("---\nPopulation last 5 years: %v\nlength: %d, capacity %d\n", population, len(population), cap(population))
+
+	// uzunluğu sıfır slice oluşturma
+	population = population[:0]
+	fmt.Printf("\nNo population: %v\nlength: %d, capacity %d\n", population, len(population), cap(population))
+
+	// uzunluğu artırılmış slice
+	population = population[:4]
+	fmt.Printf("\nFirst 4 years population: %v\nlength: %d, capacity %d\n", population, len(population), cap(population))
+
+	// İlk iki değeri düşürülen slice, kapasite değerine de dikkat edelim
+	population = population[2:]
+	fmt.Printf("\nFirst 4 years population: %v\nlength: %d, capacity %d\n", population, len(population), cap(population))
 }
