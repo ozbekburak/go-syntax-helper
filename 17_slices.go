@@ -84,7 +84,16 @@ func main() {
 	population = population[:4]
 	fmt.Printf("\nFirst 4 years population: %v\nlength: %d, capacity %d\n", population, len(population), cap(population))
 
-	// İlk iki değeri düşürülen slice, kapasite değerine de dikkat edelim
+	// ilk iki değeri düşürülen slice, kapasite değerine de dikkat edelim
 	population = population[2:]
 	fmt.Printf("\nFirst 4 years population: %v\nlength: %d, capacity %d\n", population, len(population), cap(population))
+
+	// nil slices:
+	// nil pointer, map, slice, channel, function, interface tipleri için sıfır değerini (zero value) temsil eder
+	var nilSlice []int
+	fmt.Println("---\n", nilSlice, len(nilSlice), cap(nilSlice))
+	if nilSlice == nil {
+		fmt.Println("Nil detected!")
+	}
+
 }
