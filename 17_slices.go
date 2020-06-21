@@ -37,4 +37,34 @@ func main() {
 	fmt.Println("Books read in June", juneRead)
 	fmt.Println("The book list I've read [updated]:", books)
 
+	// slice literals, a tour of go örneğinin aynısı kullanıldı
+	a := []int{1, 3, 5, 7, 9}
+	fmt.Printf("type of a: %T\n", a)
+
+	b := []bool{true, false, true, false, true, false}
+	fmt.Println("b: ", b)
+	fmt.Printf("type of a: %T\n", b)
+
+	s := []struct {
+		i int
+		j bool
+	}{
+		{2, true},
+		{3, false},
+		{5, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+	fmt.Println(s)
+
+	// aşağıdaki gösterimlerin aynı olduğunu hatırlayalım:
+	myArray := [3]float64{1.5, 2.5, 3.5}
+	fmt.Println("This is my array:", myArray)
+	fmt.Println("Aşağıdaki gösterimler de aynı çıktıyı verecektir\n------------")
+	fmt.Println(myArray[0:])
+	fmt.Println(myArray[0:3])
+	fmt.Println(myArray[:3])
+	fmt.Println(myArray[:])
+
 }
