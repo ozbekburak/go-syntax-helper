@@ -13,6 +13,16 @@ type Writer struct {
 }
 
 // Age methodu, Writer struct tipinde özel bir argüman alarak, yazarımızın yaş bilgisini döndürür.
+/*
+	aşağıdaki methodu
+
+	func Age(w Writer) int {
+		...
+	}
+
+	şeklinde normal bir fonksiyon olarak da tanımlayabilirdik.
+	Methodların, alıcı (receiver) argümana sahip birer fonksiyon olduğunu unutmayalım!
+*/
 func (w Writer) Age() int {
 	return w.died - w.born
 }
