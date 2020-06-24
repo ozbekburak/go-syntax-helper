@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 // go, diğer programlama dillerinin aksine sınıflara sahip değildir
 // onların yerine methodları kullanırız. method, özel bir argüman alan fonksiyondur diyebiliriz
@@ -27,6 +30,11 @@ func (w Writer) Age() int {
 	return w.died - w.born
 }
 
+// MyInt gibi method receiverlarını methodlar ile aynı pakette tanımlamalıyız, strcut dışında da
+// aşağıdaki gibi methodumuz için receiver tanımlayabiliriz, ancak farklı bir pakette tanımlanmış
+// (buna built-in paketleri de (int gibi) dahil) receiverları kullanamayız
+type MyInt int
+
 func main() {
 	writer1 := Writer{
 		name: "Jules Payot",
@@ -40,4 +48,7 @@ func main() {
 	}
 	fmt.Printf("%s was a French writer. Died at %d\n", writer1.name, writer1.Age())
 	fmt.Printf("%s was a English writer. Died at %d\n", writer2.name, writer2.Age())
+
+	inPackageReceiver := MyInt(math.Pow(3, 2))
+	fmt.Println(inPackageReceiver)
 }
