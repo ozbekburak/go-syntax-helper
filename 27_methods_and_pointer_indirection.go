@@ -22,8 +22,12 @@ func main() {
 	coordinate := Point3D{
 		1, 0, 0,
 	}
+	// Aşağıdaki fonksiyon gibi, pointer göndermek zorunda değiliz. (&coordinate) veya (coordinate) olur
+	// Go, coordinate.ScaleMethod(5) == (&coordinate).ScaleMethod(5) şeklinde bizim yerimize yorumlar
 	coordinate.ScaleMethod(5)
-	fmt.Println("Calling scale method:", coordinate) // Aşağıdaki fonksiyon gibi, pointer göndermek zorunda değiliz. (&coordinate) veya (coordinate) olur
-	ScaleFunction(&coordinate, 5)                    // Pointer argümanına sahip fonksiyonlara pointer göndermek zorundayız!
+
+	fmt.Println("Calling scale method:", coordinate)
+	// Pointer argümanına sahip fonksiyonlara pointer göndermek zorundayız!
+	ScaleFunction(&coordinate, 5)
 	fmt.Println("Calling scale function after scale method:", coordinate)
 }
