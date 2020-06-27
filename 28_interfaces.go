@@ -10,6 +10,10 @@ type Writer interface {
 
 func main() {
 	var isaacAsimov Writer
+
+	// var w Writer
+	// şeklinde yazılmış nil arayüz, runtime hatası verir!
+
 	isaacAsimov = Writer(Novelist{"Isaac Asimov"})
 	robertFrost := Writer(Poet{"Robert Frost"})
 	isaacAsimov.WriteABook("I, Robot")
