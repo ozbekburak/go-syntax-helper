@@ -14,5 +14,6 @@ func (a Animal) String() string {
 func main() {
 	a := Animal{"Dog", true}
 	b := Animal{"Snake", false}
+	// fmt paketi gibi bir çok paket Stringer'ı kullanır
 	fmt.Println(a, b)
 }
