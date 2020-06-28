@@ -13,6 +13,7 @@ func main() {
 	b := make([]byte, 8)
 	// fmt.Println(b)
 	for {
+		// tanımlanan byte sliceını (b) veri ile doldururak  byteların sayısını ve error döndürür
 		n, err := r.Read(b)
 		fmt.Printf("n = %v err = %v b = %v\n", n, err, b)
 		fmt.Printf("\n%q\n", b[0])
