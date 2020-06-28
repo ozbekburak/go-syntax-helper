@@ -6,3 +6,5 @@
 - [x] interfaces.go tekrar incelenecek
 - [x] interfaceler ile ilgili bir örnek daha yapılacak
 - [x] Stringer interface okunacak
+- [ ] Method - Interface kavramı detaylı okunacak
+- [ ] Images bölümü ve sonrasında interfaces kısmı tamamlanacak
