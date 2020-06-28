@@ -8,6 +8,14 @@ type Writer interface {
 	WriteABook(s string)
 }
 
+type Novelist struct {
+	name string
+}
+
+type Poet struct {
+	name string
+}
+
 func main() {
 	var isaacAsimov Writer
 
@@ -18,14 +26,6 @@ func main() {
 	robertFrost := Writer(Poet{"Robert Frost"})
 	isaacAsimov.WriteABook("I, Robot")
 	robertFrost.WriteABook("The Road Not Taken")
-}
-
-type Novelist struct {
-	name string
-}
-
-type Poet struct {
-	name string
 }
 
 func (novelist Novelist) WriteABook(s string) {
