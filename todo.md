@@ -5,4 +5,4 @@
 #### 27 June
 - [x] interfaces.go tekrar incelenecek
 - [x] interfaceler ile ilgili bir örnek daha yapılacak
-- [ ] Stringer interface okunacak
+- [x] Stringer interface okunacak
