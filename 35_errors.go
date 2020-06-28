@@ -23,6 +23,9 @@ func run() error {
 	}
 }
 
+// Kafa karışıklığı yaşanmaması için:
+// Bu kod yapısı ile error built-in arayüzünün(interface) aynı Stringer gibi
+// nasıl çalıştığını simüle ediyoruz aslında
 func main() {
 	// dikkat edilmesi gereken noktalardan biri:
 	// nil : success, non-nil : hatayı gösterir
