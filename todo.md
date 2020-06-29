@@ -8,3 +8,13 @@
 - [x] Stringer interface okunacak
 - [ ] Method - Interface kavramı detaylı okunacak
 - [x] Images bölümü ve sonrasında interfaces kısmı tamamlanacak
+
+#### 28 June
+- [ ] Method - Interface kavramı detaylı okunacak
+- [x] Images bölümü ve sonrasında interfaces kısmı tamamlanacak
+
+#### 29 June
+- [x] Method - Interface kavramı detaylı okunacak
+
+#### 30 June
+- [ ] Concurrency tamamlanacak
