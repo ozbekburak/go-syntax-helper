@@ -7,7 +7,7 @@ import "fmt"
 // A kişisi size bir evi, arabayı, adresi sorabilir. Parmağınızla evi gösterebilirsiniz
 // parmağınız bu durumda ev, araba ya da sorulan adres değil, onlardan birini işaret eden araçtır. Yani "pointer"dır.
 // aynı şekilde pointerın pointerını da oluşturabilirsiniz. yani diğer parmağınızla işaret ettiğiniz parmağı işaret edebilirsiniz.
-// (tam adresini hatırlayamadığım ama stackoverflow'da okuduğunu düşündüğüm bir metafor)
+// (tam adresini hatırlayamadığım ama stackoverflow'da okuduğumu düşündüğüm bir metafor)
 func main() {
 	myCar := "Black Mercedes"
 	// & ile adresi işaret ederken, * ile işaretçimizin (pointer) içeriğini okuruz
