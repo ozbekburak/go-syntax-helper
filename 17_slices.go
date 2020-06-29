@@ -23,7 +23,7 @@ func main() {
 	fmt.Println("The book list I've read:", books)
 
 	mayRead := books[0:3]
-	juneRead := books[2:] // 2.elemeandan itibaren listenin geri kalanını son elemanını da dahil ederek alır
+	juneRead := books[2:] // 2.elemandan itibaren listenin geri kalanını son elemanını da dahil ederek alır
 	fmt.Println("Books read in May:", mayRead)
 	fmt.Println("Books read in June", juneRead)
 
