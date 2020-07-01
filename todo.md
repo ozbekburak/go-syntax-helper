@@ -18,3 +18,6 @@
 
 #### 30 June
 - [ ] Concurrency tamamlanacak
+
+#### 01 July
+- [x] Range and close, select tamamlandı
