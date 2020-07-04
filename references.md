@@ -1,31 +1,15 @@
-#### 26 June
-- [ ] interfaces.go tekrar incelenecek
-- [ ] interfaceler ile ilgili bir örnek daha yapılacak
+## Some Reading
+[Rob Pike interview: “Go has indeed become the language of cloud infrastructure“](https://evrone.com/rob-pike-interview)
 
-#### 27 June
-- [x] interfaces.go tekrar incelenecek
-- [x] interfaceler ile ilgili bir örnek daha yapılacak
-- [x] Stringer interface okunacak
-- [ ] Method - Interface kavramı detaylı okunacak
-- [x] Images bölümü ve sonrasında interfaces kısmı tamamlanacak
+[Clean Go Code](https://github.com/Pungyeon/clean-go-article/blob/master/README.md)
 
-#### 28 June
-- [ ] Method - Interface kavramı detaylı okunacak
-- [x] Images bölümü ve sonrasında interfaces kısmı tamamlanacak
+[Using go/analysis to write a custom linter](https://arslan.io/2019/06/13/using-go-analysis-to-write-a-custom-linter/)
 
-#### 29 June
-- [x] Method - Interface kavramı detaylı okunacak
+[Top web frameworks for development in Golang](https://www.cisin.com/coffee-break/Enterprise/top-web-frameworks-for-development-in-golang.html)
 
-#### 30 June
-- [ ] Concurrency tamamlanacak
+[Learn go with tests](https://github.com/quii/learn-go-with-tests)
 
-#### 01 July
-- [x] Range and close, select tamamlandı
-
-#### 03 July
-- [x] A Tour of Go, tamamlandı.
-
-## İncelemem gereken kaynaklar
+## Resources
 [Go Doc](https://golang.org/doc/)
 
 [Writing, building, installing, and testing Go code](https://www.youtube.com/watch?v=XCsL89YtqCs)
@@ -49,3 +33,9 @@
 [Codewalk: First-Class Functions in Go](https://golang.org/doc/codewalk/functions/)
 
 [The Go Blog](https://blog.golang.org/)
+
+[Efe Karakus's Blog](https://www.efekarakus.com/)
+
+[Essential Go](https://www.programming-books.io/essential/go/)
+
+[The Go Programming Language - Addison Wesley](https://www.gopl.io/)
