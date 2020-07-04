@@ -20,7 +20,7 @@
 
 [The Go Programming Language Specification](https://golang.org/ref/spec)
 
-[https://www.youtube.com/watch?v=f6kdp27TYZs](https://www.youtube.com/watch?v=f6kdp27TYZs)
+[Google I/O 2012 - Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)
 
 [Google I/O 2013 - Advanced Go Concurrency Patterns](https://www.youtube.com/watch?v=QDDwwePbDtw)
 
@@ -28,7 +28,7 @@
 
 [Go: a simple programming environment](https://vimeo.com/53221558)
 
-[https://golang.org/doc/articles/wiki/](https://golang.org/doc/articles/wiki/)
+[Writing Web Applications](https://golang.org/doc/articles/wiki/)
 
 [Codewalk: First-Class Functions in Go](https://golang.org/doc/codewalk/functions/)
 
