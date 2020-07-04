@@ -7,4 +7,4 @@ Most of the code snippets you will see are [**A Tour of Go**](https://tour.golan
 
 You can also find several links that I plan to read or read, and the resources I use as a reference while studying Go is in [**references.md**](https://github.com/ozbekburak/go-syntax-reminder/blob/master/references.md)
 
-Also note: Comments are in files are mostly in **Turkish**. 
+Also note: Code comments in the files are mostly in **Turkish**. 
