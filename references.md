@@ -9,6 +9,8 @@
 
 [Learn go with tests](https://github.com/quii/learn-go-with-tests)
 
+[Package Management With Go Modules: The Pragmatic Guide](https://medium.com/@adiach3nko/package-management-with-go-modules-the-pragmatic-guide-c831b4eaaf31)
+
 ## Resources
 [Go Doc](https://golang.org/doc/)
 
