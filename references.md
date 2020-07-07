@@ -11,7 +11,7 @@
 
 [Package Management With Go Modules: The Pragmatic Guide](https://medium.com/@adiach3nko/package-management-with-go-modules-the-pragmatic-guide-c831b4eaaf31)
 
-[The Go Blog, JSON and Go by Andrew Gerrand(25 January 2011)](https://blog.golang.org/json)
+[The Go Blog, JSON and Go by Andrew Gerrand (25 January 2011)](https://blog.golang.org/json)
 
 ## Resources
 [Go Doc](https://golang.org/doc/)
