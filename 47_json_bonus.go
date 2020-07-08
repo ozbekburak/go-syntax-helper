@@ -5,6 +5,11 @@ import (
 	"fmt"
 )
 
+type response1 struct {
+	Page   int
+	Fruits []string
+}
+
 func main() {
 	// slicelar için json encoding örneği
 	mySlice := []string{"monday", "tuesday", "wednesday"}
@@ -15,4 +20,14 @@ func main() {
 	myMap := map[string]string{"book": "the sorrows of young werther", "author": "goethe"}
 	myMapEncoded, _ := json.Marshal(myMap)
 	fmt.Println(string(myMapEncoded))
+
+	// encoding/json paketi özel veri tiplerinizi otomatik olarak encode eder (örneğin aşağıdaki response1 custom bir type bizim için)
+	// encode edilmiş çıktılara yalnızca export edilmiş alanları dahil eder (yani büyük harfle tanımlanmış)
+	// ve varsayılan olarak bu adları JSON anahtarları olarak kullanır
+	// gobyexample.com/json
+	res1D := &response1{
+		Page:   1,
+		Fruits: []string{"apple", "peach", "pear"}}
+	res1B, _ := json.Marshal(res1D)
+	fmt.Println(string(res1B))
 }
