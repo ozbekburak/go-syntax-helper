@@ -11,7 +11,13 @@
 
 [Package Management With Go Modules: The Pragmatic Guide](https://medium.com/@adiach3nko/package-management-with-go-modules-the-pragmatic-guide-c831b4eaaf31)
 
+#### JSON Readings
+
 [The Go Blog, JSON and Go by Andrew Gerrand (25 January 2011)](https://blog.golang.org/json)
+
+[Go by Example: JSON](https://gobyexample.com/json)
+
+[How to use JSON with Go (best practices)](https://yourbasic.org/golang/json-example/)
 
 ## Resources
 [Go Doc](https://golang.org/doc/)
