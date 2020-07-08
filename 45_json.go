@@ -25,7 +25,8 @@ func main() {
 	if err != nil {
 		fmt.Println("Someting went wrong: ", err)
 	}
-	fmt.Printf("Your encoded json: %v\n", resultOfEncodedData)
+	// string conversion yapmadan resultOfEncodedData'yı bastırıp inceleyebilirsiniz
+	fmt.Printf("Your encoded json: %v\n", string(resultOfEncodedData))
 
 	// decode işlemi
 	resultOfDecodedData, error := decodeJSON(resultOfEncodedData)
