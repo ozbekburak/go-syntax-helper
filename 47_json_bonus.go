@@ -71,4 +71,12 @@ func main() {
 	str1 := strs[0]
 	fmt.Println(str1)
 
+	// Ayrıca, JSON'ı custom veri tiplerine decode edebiliriz
+	// Decode edilmiş veriye erişirken type assertionlardan bizi kurtarır
+	str := `{"page": 1, "fruits": ["apple", "peach"]}`
+	res := response2{}
+	json.Unmarshal([]byte(str), &res)
+	fmt.Println(res)
+	fmt.Println(res.Fruits[0]) // fruits -> Fruits dönüşümünü yaptı!
+
 }
