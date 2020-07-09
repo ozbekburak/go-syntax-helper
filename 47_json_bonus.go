@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 )
 
 type response1 struct {
@@ -79,4 +80,9 @@ func main() {
 	fmt.Println(res)
 	fmt.Println(res.Fruits[0]) // fruits -> Fruits dönüşümünü yaptı!
 
+	// veri ve json gösterimleri arasında hep byte ve stringleri kullandık
+	// os.Stdout gibi os.writerları kullanarak da json encodingleri stream edebiliriz
+	enc := json.NewEncoder(os.Stdout)
+	d := map[string]int{"apple": 5, "lettuce": 7}
+	enc.Encode(d)
 }
