@@ -26,11 +26,14 @@ func main() {
 	myMapEncoded, _ := json.Marshal(myMap)
 	fmt.Println(string(myMapEncoded))
 
+	/*
+		__aşağıdaki örnekler gobyexample.com/json dan alınmıştır__
+	*/
+
 	// encoding/json paketi özel veri tiplerinizi otomatik olarak encode eder (örneğin aşağıdaki response1 custom bir type bizim için)
 	// encode edilmiş çıktılara yalnızca export edilmiş alanları dahil eder (yani büyük harfle tanımlanmış)
 	// ve varsayılan olarak bu adları JSON anahtarları olarak kullanır
 
-	// gobyexample.com/json
 	res1D := &response1{
 		Page:   1,
 		Fruits: []string{"apple", "peach", "pear"}}
@@ -45,4 +48,21 @@ func main() {
 	res2B, _ := json.Marshal(res2D)
 	fmt.Println(string(res2B))
 
+	// aşağıda hangi veri tipinin geleceğini bilmediğimiz json tipini decode ediyoruz
+	byt := []byte(`{"num":6.13, "strs":["a", "b"]}`)
+
+	var dat map[string]interface{}
+
+	if err := json.Unmarshal(byt, &dat); err != nil {
+		panic(err)
+	}
+
+	// Decoded mapteki değerleri kullanmak için önce uygun tip dönüşümlerini gerçekleştirmemiz gerekir
+	// num'ı float64'e dönüşütürülmesi gösterilmiştir
+
+	/*
+		TODO: Yeni go sürümlerinde araştır. dönüşüm gerçekleştirmeden veriye eriştim?
+	*/
+	num := dat["num"].(float64)
+	fmt.Println(num)
 }
