@@ -38,7 +38,8 @@ func main() {
 	res1D := &response1{
 		Page:   1,
 		Fruits: []string{"apple", "peach", "pear"}}
-	res1B, _ := json.Marshal(res1D)
+	// MarshalIndent ->> Daha okunabilir json çıktısı için!
+	res1B, _ := json.MarshalIndent(res1D, "", "  ")
 	fmt.Println(string(res1B))
 
 	// struct alanlarında encode edilmiş verinin json keylerini etiketler (tag) ile
@@ -46,7 +47,7 @@ func main() {
 	res2D := &response2{
 		Page:   1,
 		Fruits: []string{"apple", "peach", "pear"}}
-	res2B, _ := json.Marshal(res2D)
+	res2B, _ := json.MarshalIndent(res2D, "", "  ")
 	fmt.Println(string(res2B))
 
 	// aşağıda hangi veri tipinin geleceğini bilmediğimiz json tipini decode ediyoruz
