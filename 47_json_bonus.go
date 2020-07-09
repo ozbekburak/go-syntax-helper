@@ -57,7 +57,7 @@ func main() {
 		panic(err)
 	}
 
-	// Decoded mapteki değerleri kullanmak için önce uygun tip dönüşümlerini gerçekleştirmemiz gerekir
+	// decoded mapteki değerleri kullanmak için önce uygun tip dönüşümlerini gerçekleştirmemiz gerekir
 	// num'ı float64'e dönüşütürülmesi gösterilmiştir
 
 	/*
@@ -65,4 +65,10 @@ func main() {
 	*/
 	num := dat["num"].(float64)
 	fmt.Println(num)
+
+	// iç içe geçmiş veriler (nested data) birçok dönüşüm gerektirir
+	strs := dat["strs"].([]interface{})
+	str1 := strs[0]
+	fmt.Println(str1)
+
 }
