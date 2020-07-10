@@ -22,10 +22,11 @@ func colorize(color Color, message string) {
 
 func main() {
 	useColor := flag.Bool("color", false, "display colorized output")
+
 	flag.Parse()
 
 	if *useColor {
-		colorize(ColorBlue, "Hello, DigitalOcean!")
+		colorize(ColorRed, "Hello, DigitalOcean!")
 		return
 	}
 	fmt.Println("Hello, DigitalOcean!")
