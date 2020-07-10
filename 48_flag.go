@@ -21,6 +21,7 @@ func colorize(color Color, message string) {
 }
 
 func main() {
+	var a string = "asdas"
 	useColor := flag.Bool("color", false, "display colorized output")
 
 	flag.Parse()
@@ -29,5 +30,7 @@ func main() {
 		colorize(ColorRed, "Hello, DigitalOcean!")
 		return
 	}
+
 	fmt.Println("Hello, DigitalOcean!")
+	fmt.Println("\u001b[32m", a)
 }
