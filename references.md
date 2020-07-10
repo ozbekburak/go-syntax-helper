@@ -19,6 +19,19 @@
 
 [How to use JSON with Go (best practices)](https://yourbasic.org/golang/json-example/)
 
+#### Package "flag" Readings
+
+[How to Use the Flag Package in Go](https://www.digitalocean.com/community/tutorials/how-to-use-the-flag-package-in-go)
+
+[Go by Example: Command-Line Flags](https://gobyexample.com/command-line-flags)
+
+[CLI: Command Line Programming with Go](https://thenewstack.io/cli-command-line-programming-with-go/)
+
+[Package flag](https://golang.org/pkg/flag/#pkg-index)
+
+[Building a Simple CLI Tool with Golang](https://golang.org/pkg/flag/#pkg-index)
+
+
 ## Resources
 [Go Doc](https://golang.org/doc/)
 
