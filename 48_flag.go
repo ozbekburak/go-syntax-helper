@@ -21,7 +21,9 @@ func colorize(color Color, message string) {
 }
 
 func main() {
-	var a string = "asdas"
+	// flag değerini yakalamak için değişken tanımlıyoruz
+	// flag için ayırdığımız değişken bize flagden dönen değerin adresini tutar
+	// *useColor -> true, false değeri tutar yani.
 	useColor := flag.Bool("color", false, "display colorized output")
 
 	flag.Parse()
@@ -32,5 +34,4 @@ func main() {
 	}
 
 	fmt.Println("Hello, DigitalOcean!")
-	fmt.Println("\u001b[32m", a)
 }
