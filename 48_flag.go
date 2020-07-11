@@ -1,10 +1,12 @@
 package main
 
+// reference: https://www.digitalocean.com/community/tutorials/how-to-use-the-flag-package-in-go
 import (
 	"flag"
 	"fmt"
 )
 
+// Color type for colorizing our output
 type Color string
 
 const (
