@@ -24,12 +24,26 @@ func main() {
 	// flag değerini yakalamak için değişken tanımlıyoruz
 	// flag için ayırdığımız değişken bize flagden dönen değerin adresini tutar
 	// *useColor -> true, false değeri tutar yani.
-	useColor := flag.Bool("color", false, "display colorized output")
+	useColor := flag.Bool("color", false, "display colorized output need additional color argument \ne.g: go run flag.go -color red")
 
 	flag.Parse()
 
 	if *useColor {
-		colorize(ColorRed, "Hello, DigitalOcean!")
+		switch flag.Arg(0) {
+		case "black":
+			colorize(ColorBlack, "Hello, DigitalOcean!")
+		case "red":
+			colorize(ColorRed, "Hello, DigitalOcean!")
+		case "green":
+			colorize(ColorGreen, "Hello, DigitalOcean!")
+		case "yellow":
+			colorize(ColorYellow, "Hello, DigitalOcean!")
+		case "blue":
+			colorize(ColorBlue, "Hello, DigitalOcean!")
+		default:
+			fmt.Println("Hello, DigitalOcean!")
+		}
+
 		return
 	}
 
