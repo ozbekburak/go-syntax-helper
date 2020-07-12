@@ -13,6 +13,12 @@ import (
 // genellikle alt komutlardan (sub-commands) faydalanır
 // her bir alt komutun kendi flag koleksiyonuna sahip olabildiğini bilmekte fayda var!
 
+type GreetCommand struct {
+	fs *flag.FlagSet
+
+	name string
+}
+
 func NewGreetCommand() *GreetCommand {
 	gc := &GreetCommand{
 		fs: flag.NewFlagSet("greet", flag.ContinueOnError),
@@ -21,12 +27,6 @@ func NewGreetCommand() *GreetCommand {
 	gc.fs.StringVar(&gc.name, "name", "World", "name of the person to be greeted")
 
 	return gc
-}
-
-type GreetCommand struct {
-	fs *flag.FlagSet
-
-	name string
 }
 
 func (g *GreetCommand) Name() string {
@@ -48,6 +48,7 @@ type Runner interface {
 	Name() string
 }
 
+// root fonksiyonu, tüm subcommandlerin tanımlanacağı Runner interfaceini tanımlıyor
 func root(args []string) error {
 	if len(args) < 1 {
 		return errors.New("You must pass a sub-command")
@@ -69,7 +70,9 @@ func root(args []string) error {
 }
 
 func main() {
-
+	// herhangi bir fonksiyon hata dönerse, if koşulumuz onu yakalıyor
+	// programa verilen tüm argümanlar root'a gönderiliyor
+	// os.Args[1:] sebebi programın kendi isminin de komut olarak geçmesi
 	if err := root(os.Args[1:]); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
