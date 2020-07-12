@@ -26,6 +26,7 @@ func main() {
 	fmt.Println("numb: ", *numbPtr)
 	fmt.Println("fork: ", *boolPtr)
 	fmt.Println("svar: ", svar)
+	// flag.Args() flag sayılmayan argümanları döndürür
 	fmt.Println("tail: ", flag.Args())
 
 }
