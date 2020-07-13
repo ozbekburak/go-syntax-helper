@@ -17,6 +17,7 @@ func main() {
 	fmt.Printf("Response : %v", *response)
 
 	scanner := bufio.NewScanner(response.Body)
+	fmt.Println("\n\nScanner: ", scanner.Text())
 	fmt.Println(scanner.Text())
 	for i := 0; i < 5; i++ {
 		fmt.Println(scanner.Text())
