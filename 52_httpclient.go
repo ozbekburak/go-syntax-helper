@@ -15,13 +15,14 @@ func main() {
 
 	fmt.Println(response.Status)
 	fmt.Println(*response.Request)
-	//fmt.Printf("Response : %v", *response)
 
 	scanner := bufio.NewScanner(response.Body)
+
 	fmt.Println(scanner.Text())
-	// fmt.Println("\n\nScanner: ", scanner.Text())
-	// fmt.Println(scanner.Text())
-	// for i := 0; i < 5; i++ {
-	// 	fmt.Println(scanner.Text())
-	// }
+
+	// scanner.Scan() scan işleminin devam edip etmediğini dönüyor
+	// o olmadan boş basıyor!
+	for i := 0; scanner.Scan() && i < 10; i++ {
+		fmt.Println(scanner.Text())
+	}
 }
