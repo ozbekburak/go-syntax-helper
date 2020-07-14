@@ -6,8 +6,9 @@ import (
 	"net/http"
 )
 
+// bu uygulamayı çalıştırmadan önce, 53_httpserver.go uygulaması çalıştırılmalıdır!!!
 func main() {
-	response, err := http.Get("https://dev.to")
+	response, err := http.Get("http://localhost:8090/hello")
 	if err != nil {
 		panic(err)
 	}
