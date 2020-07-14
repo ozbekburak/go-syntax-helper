@@ -11,6 +11,15 @@ func hello(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "hello\n")
 }
 
+// tüm HTTP istek headerlarını okuyup response body'de görüntüleyen header handlerı
+func headers(w http.ResponseWriter, r *http.Request) {
+	for name, headers := range r.Header {
+		for _, h := range headers {
+			fmt.Fprintf(w, "%v: %v\n", name, h)
+		}
+	}
+}
+
 func main() {
 
 }
