@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 )
 
@@ -9,6 +10,8 @@ import (
 // aşağıdaki hello fonksiyonumuz handler olarak servis veriyor
 func hello(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "hello\n")
+	// requesti incelemek için log attım, log kütüphanesine de giriş yapmış olduk
+	log.Print(r)
 }
 
 // tüm HTTP istek headerlarını okuyup response body'de görüntüleyen header handlerı
