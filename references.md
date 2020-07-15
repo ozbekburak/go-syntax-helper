@@ -31,7 +31,7 @@
 
 [Building a Simple CLI Tool with Golang](https://golang.org/pkg/flag/#pkg-index)
 
-#### Http Readings
+#### Http Readings
 
 [Go Web Examples](https://gowebexamples.com/)
 
@@ -46,7 +46,6 @@
 [Go by Example: HTTP Clients](https://gobyexample.com/http-clients)
 
 [Go by Example: HTTP Servers](https://gobyexample.com/http-servers)
-
 
 ## Resources
 [Go Doc](https://golang.org/doc/)
