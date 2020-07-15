@@ -31,6 +31,22 @@
 
 [Building a Simple CLI Tool with Golang](https://golang.org/pkg/flag/#pkg-index)
 
+#### Http Readings
+
+[Go Web Examples](https://gowebexamples.com/)
+
+[Creating a simple “Hello World!” HTTP Server in Go](https://medium.com/rungo/creating-a-simple-hello-world-http-server-in-go-31c7fd70466e)
+
+[Beginners guide to serving files using HTTP servers in Go](https://medium.com/rungo/beginners-guide-to-serving-files-using-http-servers-in-go-4e542e628eac)
+
+[Making external HTTP requests in Go](https://medium.com/rungo/making-external-http-requests-in-go-eb4c015f8839)
+
+[Making HTTP Requests in Golang](https://medium.com/@masnun/making-http-requests-in-golang-dd123379efe7)
+
+[Go by Example: HTTP Clients](https://gobyexample.com/http-clients)
+
+[Go by Example: HTTP Servers](https://gobyexample.com/http-servers)
+
 
 ## Resources
 [Go Doc](https://golang.org/doc/)
