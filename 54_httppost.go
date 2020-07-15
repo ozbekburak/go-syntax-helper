@@ -12,12 +12,14 @@ func main() {
 		"name":    "Burak",
 		"country": "Turkey",
 	})
-
 	if error != nil {
 		log.Fatalln(error)
 	}
 
 	response, err := http.Post("https://httpbin.org/post", "application/json", bytes.NewBuffer(requestBody))
+	if err != nil {
+		log.Fatalln(err)
+	}
 
 	defer response.Body.Close()
 }
