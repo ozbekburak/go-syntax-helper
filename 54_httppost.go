@@ -1,5 +1,7 @@
 package main
 
+// the examples are shown below mostly get it from https://medium.com/@masnun/making-http-requests-in-golang-dd123379efe7
+
 import (
 	"bytes"
 	"encoding/json"
