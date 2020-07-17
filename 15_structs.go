@@ -44,4 +44,14 @@ func main() {
 
 	fmt.Println(person1, "--", person2, "--", person3, "--", personPointer)
 
+	fightclub := struct {
+		Actors []string
+		Year   int
+		Rating float64
+	}{
+		Actors: []string{"Brad Pitt", "Edward Norton"},
+		Year:   1999,
+		Rating: 9.0,
+	}
+
 }
