@@ -53,5 +53,5 @@ func main() {
 		Year:   1999,
 		Rating: 9.0,
 	}
-
+	fmt.Println("My Lovely anonymous struct: ", fightclub)
 }
