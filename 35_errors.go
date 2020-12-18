@@ -30,6 +30,10 @@ func main() {
 	// dikkat edilmesi gereken noktalardan biri:
 	// nil : success, non-nil : hatayı gösterir
 	if err := run(); err != nil {
-		fmt.Println(err)
+		fmt.Println(err.Error())
+		// fmt.Println(err) yeterliydi aslında, error built-in simüle ediyoruz!
 	}
+
+	createdError := CustomError{"Broke my os", time.Now()}
+	fmt.Println(createdError.Error())
 }
