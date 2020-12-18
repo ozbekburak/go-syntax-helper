@@ -16,6 +16,14 @@ type Poet struct {
 	name string
 }
 
+func (novelist Novelist) WriteABook(s string) {
+	fmt.Println(novelist.name, "wrote a book which name is:", s)
+}
+
+func (poet Poet) WriteABook(s string) {
+	fmt.Println(poet.name, "wrote a poem which name is:", s)
+}
+
 func main() {
 	var isaacAsimov Writer
 
@@ -26,12 +34,4 @@ func main() {
 	robertFrost := Writer(Poet{"Robert Frost"})
 	isaacAsimov.WriteABook("I, Robot")
 	robertFrost.WriteABook("The Road Not Taken")
-}
-
-func (novelist Novelist) WriteABook(s string) {
-	fmt.Println(novelist.name, "wrote a book which name is:", s)
-}
-
-func (poet Poet) WriteABook(s string) {
-	fmt.Println(poet.name, "wrote a poem which name is:", s)
 }
