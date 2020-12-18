@@ -9,7 +9,7 @@ import (
 func main() {
 
 	r := strings.NewReader("Hello, Reader!")
-	// fmt.Println(r) // r 'nin adresini yazdırdığına dikkat edelim ve döndürdüğü değerleri inceleyleim
+	// fmt.Println(r) -> r 'nin adresini yazdırdığına dikkat edelim ve döndürdüğü değerleri inceleyleim
 	b := make([]byte, 8)
 	// fmt.Println(b)
 	for {
